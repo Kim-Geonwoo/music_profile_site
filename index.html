@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8867becc4c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    
+
+    
+
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600;700;800;900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+  @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    
+    </style>
+  
+  
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'gothic': ['Gothic A1' , 'sans-serif'],
+          'man': ['Black Han Sans', 'sans-serif'],
+          'noto': ['Noto Sans KR', 'sans-serif'],
+          'spoqa': ['Spoqa Han Sans Neo', 'sans-serif'],
+        },
+          
+        
+    
+
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>김건우_명함</title>
+  <script>
+    function exportContact() {
+      // Generate the vCard content
+      const vCardContent = `BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:김건우
+N;CHARSET=UTF-8:;김건우;;;
+GENDER:M
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:magoso@naver.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:kgw@geonwoo.dev
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;;;;South Korea
+URL;CHARSET=UTF-8:music.geonwoo.info
+X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/geonwoo_music
+X-SOCIALPROFILE;TYPE=spotify:https://t.ly/odhmM
+X-SOCIALPROFILE;TYPE=applemusic:https://music.apple.com/us/artist/%EA%B9%80%EA%B1%B0%EB%88%84/1774774538
+REV:2024-10-26T09:52:56.254Z
+END:VCARD`;
+
+      // Create a Blob with the vCard content
+      const blob = new Blob([vCardContent], { type: 'text/vcard' });
+
+      // Create a URL for the Blob
+      const url = URL.createObjectURL(blob);
+
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'contact.vcf';
+      link.style.display = 'none';
+
+      // Append the link to the document body
+      document.body.appendChild(link);
+
+      // Trigger the click event to initiate the download
+      link.click();
+
+      // Cleanup the URL and remove the link element
+      URL.revokeObjectURL(url);
+      link.remove();
+    }
+  </script>
+</head>
+<body class="bg-stone-200 dark:bg-slate-900">
+
+
+
+<section>
+  <div class="relative drop-shadow-xl  items-center w-full px-5 py-3 mx-auto max-w-7xl mt-14">
+    <div class="w-full max-w-xl px-5 py-4 mx-auto text-gray-800 bg-white rounded-xl shadow-lg dark:bg-slate-700 bg-slate-100">
+      <div class="w-full pt-1 mx-auto -mt-16 text-center">
+          <a href="#" class="relative block ">
+              <img alt="profile" src="/src/img/profile.jpeg" class="mx-auto object-cover rounded-2xl h-20 w-20 "/>
+          </a>
+      </div>
+      <div class="w-full  ">
+          <div class="pb-[13%] text-center">
+              <p class="text-5xl pt-6 pb-2 font-gothic font-bold  text-zinc-800 dark:text-slate-100">
+                  김건우
+              </p>
+              <div>
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  <span class="w-1.5 h-1.5 inline-block bg-emerald-400 rounded-full"></span>
+                      디지털 크리에이터
+                </span>
+              </div>
+          </div>
+
+
+          <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-200  dark:bg-slate-300">
+            <div class="flex items-center justify-between text-xs text-zinc-900 dark:text-gray-900">
+              <div class="container flex flex-col items-center font-noto text-xl">
+                <a href="https://github.com/Kim-Geonwoo">
+                  링크 바로가기
+                  
+                </a>
+                
+              </div>
+            </div>
+            
+        </div>
+
+          <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-300  dark:bg-slate-200">
+            <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+              <a href="mailto:kgw@geonwoo.dev">
+                <div class="container flex flex-col items-center font-noto text-xl">
+                <i class="fa-solid fa-envelope"></i>
+                  
+                    kgw@geonwoo.dev
+                  
+                  </a>
+                
+                
+              </div>
+            </div>
+            
+        </div>
+
+        <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-300  dark:bg-slate-200">
+          <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+            <a href="https://www.instagram.com/geonwoo_music">
+            <div class="container flex flex-col items-center font-noto text-xl">
+                <i class="fa-brands fa-square-instagram"></i>
+                INSTAGRAM 
+                
+              </a>
+              
+            </div>
+          </div>
+          
+      </div>
+
+      <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-300  dark:bg-slate-200">
+        <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+          <a href="https://music.apple.com/us/artist/김거누/1774774538">
+          <div class="container flex flex-col items-center font-noto text-xl">
+            <i class="fa-brands fa-apple"></i>
+              Apple Music
+              
+            </a>
+            
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-300  dark:bg-slate-200">
+      <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+        <a href="https://t.ly/odhmM">
+        <div class="container flex flex-col items-center font-noto text-xl">
+          <i class="fa-brands fa-spotify"></i>
+            Spotify
+            
+          </a>
+          
+        </div>
+      </div>
+      
+  </div>
+
+
+
+
+      <div class="w-full drop-shadow-lg py-2.5 mb-6  rounded-lg bg-stone-300  dark:bg-slate-200">
+          <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+            <div class="container flex flex-col items-center font-noto text-xl">
+              <p>
+                안녕하세요.<br/><i class="fa-solid fa-guitar"></i> 가라지밴드앱으로 가끔 <br/> <i class="fa-solid fa-music"></i> 작곡하는 김건우 입니다
+
+
+
+              </p>
+            
+            </div>
+          
+        </div>
+
+     </div>
+          <button type="button" class="py-2 px-4 mb-1.5  rounded-lg font-noto  drop-shadow-lg bg-sky-400 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 " rounded-lg onclick="exportContact()">
+              연락처 앱에 추가
+          </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+
+
+  
+</body>
+</html>
