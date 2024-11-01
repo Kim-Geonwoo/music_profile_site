@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width" initial-scale=1.0">
   <script src="https://kit.fontawesome.com/8867becc4c.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -99,14 +99,14 @@ END:VCARD`;
 
 
 <section>
-  <div class="relative drop-shadow-xl  items-center w-full px-5 py-3 mx-auto max-w-7xl mt-14">
-    <div class="w-full max-w-xl px-5 py-4 mx-auto text-gray-800 bg-white rounded-xl shadow-lg dark:bg-slate-700 bg-slate-100">
-      <div class="w-full pt-1 mx-auto -mt-16 text-center">
+  <div class="relative drop-shadow-xl items-center w-full px-5 py-3 mx-auto max-w-4xl mt-14">
+    <div class="w-full  px-5 py-4 mx-auto text-gray-800 bg-white rounded-xl shadow-lg dark:bg-slate-700 bg-slate-100">
+      <div class="w-full  pt-1 mx-auto -mt-16 text-center">
           <a href="#" class="relative block ">
               <img alt="profile" src="/src/img/profile.jpeg" class="mx-auto object-cover rounded-2xl h-20 w-20 "/>
           </a>
       </div>
-      <div class="w-full  ">
+      <div class="w-full">
           <div class="pb-[13%] text-center">
               <p class="text-5xl pt-6 pb-2 font-gothic font-bold  text-zinc-800 dark:text-slate-100">
                   김건우
@@ -119,9 +119,67 @@ END:VCARD`;
               </div>
           </div>
 
+          <!-- 최신곡 1곡만 노출 -->
+
+          
+        <div class="w-full mb-6 ">
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+              
+          <div class="flex flex-col items-center py-6 mb-3 px-6">
+              <img class="w-24 h-24 my-4 rounded-full shadow-lg" src="src/img/summer_dance!.jpg" alt="Summer Dance!"/>
+              <h5 class="mb-1 text-xl font-semibold text-gray-900 dark:text-white">Summer Dance!</h5>
+              <span class="text-sm  text-0 gray-500 dark:text-gray-400">김거누</span>
+
+              <div class="flex flex-row mt-4 md:mt-6">
+                <button type="button" class="text-green-700 hover:text-white border border-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-1.5 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-500 dark:focus:ring-green-800">
+                <div class="flex flex-row items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+                  <a href="https://open.spotify.com/track/7lzKqnuLynRAP7Z8v70ucr?si=92de70a7f23f4fbd">
+                  <div class="container flex flex-col items-center font-noto text-xl">
+                    <i class="fa-brands fa-spotify"></i>
+                      Spotify
+                      
+                    </a>
+                    
+                  </div>
+                </div>  
+
+              </button>
+
+              <button type="button" class="text-red-700 hover:text-white border border-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-1.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-500 dark:focus:ring-red-800">
+                <div class="flex flex-row items-center justify-between text-xs text-zinc-800 dark:text-gray-900">
+                  <a href="https://music.apple.com/us/album/summer-dance/1774774537?i=1774774539">
+                  <div class="container flex flex-col items-center font-noto text-xl">
+                    <i class="fa-brands fa-apple"></i>
+                      Music
+                      
+                    </a>
+                    
+                  </div>
+                </div>  
+
+              </button>
+
+                  
+              </div>
+          </div>
+        </div>
+
+        </div>
+
+
+        <!-- 최신곡 1곡만 노출 끗 -->
+
+
+
+
+          <div class="flex items-center m-1"> </div>
+
+
 
           <div class="w-full drop-shadow-lg p-2.5 mb-4  rounded-lg bg-stone-200  dark:bg-slate-300">
-            <div class="flex items-center justify-between text-xs text-zinc-900 dark:text-gray-900">
+            
+             <div class="flex items-center justify-between text-xs text-zinc-800 dark:text-gray-900 ">
               <div class="container flex flex-col items-center font-noto text-xl">
                 <a href="https://github.com/Kim-Geonwoo">
                   링크 바로가기
